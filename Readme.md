@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Вероника Янкина](https://up.htmlacademy.ru/htmlcss/31/user/1378487).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Асташина].(https://htmlacademy.ru/profile/helen_astashina)
 
 ---
 
