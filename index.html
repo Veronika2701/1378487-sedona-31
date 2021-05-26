@@ -2,11 +2,136 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title> Городок Седона </title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <a>
+        <img src="https://via.placeholder.com/138x70" alt="Логотип">
+        </a>        
+      </nav>
+   </header> 
+    <main>
+      <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+			<p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+      <section>
+        <h2>Настоящий городок</h2>
+        <p>-№1-</p>
+        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+      <p>
+          <img src="https://via.placeholder.com/800x256" alt="Фото городка Седона">
+        </p>
+      </section>
+      <section>
+        <ul>
+          <li>
+           <h3>Жильё</h3>
+           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li>
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li> 
+          <li>
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>    
+      </section>
+      <section>
+        <p>
+          <img src="https://via.placeholder.com/800x256" alt="Фото Моста дьявола">
+        </p>
+        <h2>Там есть Мост дьявола</h2>
+        <p>-№2-</p>
+        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      </section>
+      <section>
+        <ul>
+          <li>
+           <h2>Небольшая площадь</h2>
+           <p>-№3-</p>
+           <p> Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h2>Красивая дорога</h2>
+            <p>-№4-</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+         </li>  
+         <li>
+           <h2>Мало туристов</h2>
+           <p>-№5-</p>
+           <p>Большинство едет в Гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+       <h2>Заинтересовались?</h2> 
+       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p> 
+       <button type="submit">Поиск гостиницы в Седоне</button>
+      </section>
+      <p>
+        <img src="https://via.placeholder.com/1199x594" alt="">
+      </p>
+    </main>
+   <footer>
+      <section>
+       <h2>Контакты</h2>
+       <a href="#">#VisitSedona</a>
+       <a href="tel:+78005558628">+7 800 555-86-28</a>
+      </section>
+      <section>
+       <h2>Мы в соцсетях</h2>
+       <ul>
+          <li>
+           <a href="#">Твиттер</a>
+          </li>
+          <li>
+           <a href="#">Фейсбук</a>
+          </li>
+          <li>
+           <a href="#">Ютуб</a>
+          </li>
+       </ul>
+     </section>
+     <p>
+       Website by:
+        <a href="https://htmlacademy.ru">
+         <img src="https://via.placeholder.com/115x33" alt="Логотип htmlacademy">
+       </a>
+      </p>
+    </footer>
+    <section>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="text-in">Дата заезда</label>
+        <input id="text-in" type="text" name="beginDate" placeholder="24 апреля 2017"> 
+      </p>
+      <p>
+        <label for="text-out">Дата выезда </label>
+        <input id="text-out" type="text" name="endDate" placeholder="4 июля 2017"> 
+      </p>
+      <p>
+        <label for="number-older">Взрослые:</label>
+        <button type="button">-</button>
+        <input id="number-older" type="text" name="people" value="2">
+        <button type="button">+</button>
+      </p>
+      <p>
+        <label for="number-kids">Дети:</label>
+        <button type="button">-</button>
+        <input id="number-kids" type="text" name="kids" value="0">
+        <button type="button">+</button> 
+      </p>
+      <button type="submit">Найти</button>
+    </form>
+     </section>
   </body>
 </html>
