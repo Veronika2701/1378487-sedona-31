@@ -276,12 +276,12 @@
     text-decoration: none;
  }
 
- .footer-copyright:hover {
-   color:var(--blue-gray-light);
+ .copyright-button:hover {
+   background-color:var(--blue-gray-light);
   }
 
-  .footer-copyright:active {
-   color:var(--light-gray);
+  .copyright-button:active {
+    background-color:var(--light-gray);
   }
 
 
@@ -291,6 +291,7 @@
 
   .filter-form {
    background:url("../img/catalog/background.jpg") no-repeat;
+   background-size: cover;
   }
 
   .filter-option {
@@ -319,6 +320,7 @@
     background: none;
     border: 2px solid var(--basic-white);
     color:var(--basic-white);
+    text-transform: uppercase;
   }
 
   .filter-button-show:hover {
@@ -326,6 +328,8 @@
     color:var(--basic-black);
     text-transform: uppercase;
   }
+
+ /* catalog-sort */
 
   .catalog-sort h2 {
     font-size: 21px;
@@ -344,7 +348,10 @@
   .sort-list {
     list-style: none;
   }
-   .sort-item a:link {
+
+
+
+  .sort-item a:link {
     background: none;
     border: none;
     font-size: 12px;
@@ -375,35 +382,12 @@
     text-decoration: none;
   }
 
-  .button-sort-up {
-    background-color:var(--smoky);
-    border: none;
+  .sort-item a.active {
+    color:var(--blue-gray-light);
+    text-decoration: none;
   }
 
-  .button-sort-down {
-   background-color:var(--smoky);
-   border: none;
-  }
-
-  .button-sort-up:hover {
-    background-color:var(--basic-black);
-    border: none;
-  }
-
-  .button-sort-down:hover {
-   background-color:var(--basic-black);
-   border: none;
-  }
-
-  .button-sort-up:active {
-    background-color:var(--blue-gray-light);
-    border: none;
-  }
-
-  .button-sort-down:active {
-    background-color:var(--blue-gray-light);
-    border: none;
-  }
+    /* catalog-list */
 
   .catalog-list {
     list-style: none;
@@ -414,6 +398,12 @@
     font-weight: 400;
     text-transform: uppercase;
     color:var(--basic-black);
+  }
+
+  .catalog-item-name {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
   }
 
   .catalog-item-detail {
