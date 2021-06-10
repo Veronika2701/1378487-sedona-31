@@ -12,22 +12,27 @@
   <body class="page-body">
     <header>
       <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a class="base-link" href="#">Информация</a></li>
-          <li><a class="base-link" href="#">Фото и видео</a></li>
-          <li><a class="base-link " href="#">Карта штата</a></li>
-          <li><a class="active"> Гостиницы</a></li>
-        </ul>
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны">
-        </a>
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+           <li><a class="base-link" href="#">Информация</a></li>
+           <li><a class="base-link" href="#">Фото и видео</a></li>
+           <li><a class="base-link " href="#">Карта штата</a></li>
+           <li><a class="active"> Гостиницы</a></li>
+         </ul>
+          <div class="main-logo-wrapper">
+           <a class="main-header-logo" href="index.html">
+             <img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны">
+           </a>
+          </div>
+      </div>
       </nav>
    </header>
    <main class="container-catalog">
        <h1> Каталог гостиниц в Седоне</h1>
       <form class="filter-form" method="post" action="https://echo.htmlacademy.ru" oninput="daysoutput.value=dayscount.value">
         <h2> Критерии выбора</h2>
-          <fieldset>
+        <div class="filter-form-container">
+          <fieldset class="filter-1">
             <legend>Инфаструктура:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
@@ -50,7 +55,7 @@
               </li>
             </ul>
          </fieldset>
-         <fieldset>
+         <fieldset class="filter-2">
             <legend>Тип жилья:<legend>
             <ul>
               <li class="filter-option filter-checkbox">
@@ -73,7 +78,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-option filter-range">
+          <fieldset class="filter-option filter-range filter-3">
             <legend>Стоимость в сутки (р):</legend>
             <label for="min-price">от <input class="filter-price-input" id="min-price" type="text" name="min-price" value="0"></label>
             <label for="max-price">до <input class="filter-price-input" id="max-price" type="text" name="max-price" value="3000"></label>
@@ -82,6 +87,7 @@
             <button class="button-range-max" type="button">+</button>
             <button type="submit" class="filter-button-show">Показать</button>
           </fieldset>
+        </div>
       </form>
     <section class="catalog-sort">
       <h2>Найдено: 3</h2>
@@ -199,11 +205,11 @@
      </ul>
    </section>
    <p class="footer-copyright">
-     <b>Website by:</b>
-      <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
-       <img src="img/footer/logo-htmlacademy.svg" width="115" height="33" alt="Логотип htmlacademy">
-     </a>
-    </p>
+    <b>Website by:</b>
+     <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
+      <img src="img/footer/logo-htmlacademy.svg" width="115" height="33" alt="Логотип htmlacademy">
+    </a>
+   </p>
   </footer>
   </body>
 </html>
