@@ -398,7 +398,7 @@
 
   .filter-form-container {
     display: grid;
-    grid-template-columns: 0,5fr 1,5fr 2fr
+    grid-template-columns: 1fr 1fr 2fr;
   }
 
   .filter-1 {
@@ -409,13 +409,9 @@
   .filter-2 {
     grid-column: 2/3;
     justify-self:center;
+    margin-left: auto;
   }
 
-  .filter-3 {
-    grid-column: 3/4;
-    justify-self:right;
-    padding-right: 73px;
-  }
 
 
   .filter-form {
@@ -517,6 +513,11 @@
     /* catalog-list */
 
   .catalog-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    /* grid-template-columns: min-content 2fr min-content; */
+    grid-template-rows: min-content min-content min-content;
     list-style: none;
   }
   .catalog-item {
@@ -525,6 +526,22 @@
     font-weight: 400;
     text-transform: uppercase;
     color:var(--basic-black);
+  }
+  .item-1 {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: min-content 2fr min-content;
+  }
+  .item-2 {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: min-content 2fr min-content;
+  }
+
+  .item-3 {
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: min-content 2fr min-content;
   }
 
   .catalog-item-name {
