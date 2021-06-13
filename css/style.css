@@ -71,26 +71,37 @@
     }
 
   .main-navigation-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     background-color: var(--basic-white);
+    position: relative;
    }
 
   .site-navigation {
     margin: 0;
     padding: 15px 72px;
-    grid-column: 1/4;
-    grid-row: 1/2;
     line-height: 26px;
     font-weight: bold;
     color: var(--basic-black);
     list-style: none;
+    display: flex;
+  }
+
+  .site-navigation li {
+    margin-left: 72px;
+  }
+
+  .site-navigation li:first-child {
+    margin-left: 0;
+  }
+
+  .site-navigation li:nth-child(3) {
+    margin-left: auto;
   }
 
   .main-logo-wrapper {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    z-index: 1 ;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -69px;
     }
 
     /*Container*/
@@ -223,7 +234,9 @@
     line-height: 24px;
     font-weight: 400;
   }
-
+  .namber-older-kids {
+    display: flex;
+  }
   .search-button {
     font-size: 21px;
     line-height: 26px;
@@ -248,7 +261,6 @@
 
  .search-form {
    width:568px;
-   height:628px;
    align-items: center;
   }
 
@@ -412,8 +424,6 @@
     margin-left: auto;
   }
 
-
-
   .filter-form {
    background:url("../img/catalog/background.jpg") no-repeat;
    background-size: cover;
@@ -456,11 +466,18 @@
 
  /* catalog-sort */
 
+ .catalog-sort{
+    display: flex;
+
+  }
+
   .catalog-sort h2 {
     font-size: 21px;
    line-height: 26px;
    font-weight: 700;
    color:var(--basic-black);
+   margin-left: 73px;
+   margin-right: 46px;
   }
 
   .catalog-sort p {
@@ -468,11 +485,15 @@
    line-height: 18px;
    font-weight: 400;
    color:var(--basic-black);
+
   }
 
   .sort-list {
     list-style: none;
-  }
+    display: flex;
+    margin-left: 40px;
+
+    }
 
   .sort-item a:link {
     background: none;
@@ -516,7 +537,6 @@
     margin: 0;
     padding: 0;
     display: grid;
-    /* grid-template-columns: min-content 2fr min-content; */
     grid-template-rows: min-content min-content min-content;
     list-style: none;
   }
@@ -590,4 +610,7 @@
 
   .catalog-item-raiting {
     background-color: var(--basic-dark-white);
+  }
+  .hostel-star-raiting {
+    display: flex;
   }
