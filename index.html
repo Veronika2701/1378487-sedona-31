@@ -69,7 +69,7 @@
             <p class="feature-item-image-2">
               <img src="img/content/bridge.jpg " width="800" height="256"
                 alt="Не полностью обвалившаяся скала соединяет пропасть">
-            <p>
+            </p>
             <div class="feature-item-text-2">
               <h3>Там есть Мост дьявола</h3>
               <p>-№2-</p>
@@ -100,27 +100,29 @@
       </p>
       <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="search-item">
-          <label for="text-in">Дата заезда</label>
-          <input id="text-in" type="text" name="beginDate" placeholder="24 апреля 2017">
-        </p>
-        <p class="search-item">
-          <label for="text-out">Дата выезда </label>
-          <input id="text-out" type="text" name="endDate" placeholder="4 июля 2017">
-        </p>
-        <div class="namber-older-kids">
+        <div class="search-list">
           <p class="search-item">
-            <label for="number-older">Взрослые:</label>
-            <button class="button-min" type="button">-</button>
-            <input id="number-older" type="text" name="people" value="2">
-            <button class="button-max" type="button">+</button>
+            <label for="text-in">Дата заезда</label>
+            <input id="text-in" type="text" name="beginDate" placeholder="24 апреля 2017">
           </p>
           <p class="search-item">
-            <label for="number-kids">Дети:</label>
-            <button class="button-min" type="button">-</button>
-            <input id="number-kids" type="text" name="kids" value="0">
-            <button class="button-max" type="button">+</button>
+            <label for="text-out">Дата выезда </label>
+            <input id="text-out" type="text" name="endDate" placeholder="4 июля 2017">
           </p>
+          <div class="search-group">
+            <p class="search-item">
+              <label for="number-older">Взрослые:</label>
+              <button class="button-min" type="button">-</button>
+              <input id="number-older" type="text" name="people" value="2">
+              <button class="button-max" type="button">+</button>
+            </p>
+            <p class="search-item">
+              <label for="number-kids">Дети:</label>
+              <button class="button-min" type="button">-</button>
+              <input id="number-kids" type="text" name="kids" value="0">
+              <button class="button-max" type="button">+</button>
+            </p>
+          </div>
         </div>
         <button class="button-search-catalog" type="submit">Найти</button>
       </form>
@@ -137,7 +139,7 @@
     </section>
     <section class="footer-social">
       <h2>Мы в соцсетях</h2>
-      <ul>
+      <ul class="footer-social-list">
         <li>
           <a class="social-button" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
