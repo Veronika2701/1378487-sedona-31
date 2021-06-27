@@ -630,7 +630,9 @@
     color:var(--light-brown);
   }
   .container-catalog {
-    margin: 0;
+    grid-row: 2/-2;
+    grid-column: 1/-1;
+    /* margin: 0 auto; */
     padding: 0;
 
   }
@@ -638,62 +640,163 @@
   /* filter-form */
 
   .filter-form-container {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
   }
-
-  .filter-1 {
-    grid-column: 1/2;
-    justify-self:right;
-    border: none;
-  }
-
-  .filter-2 {
-    grid-column: 2/3;
-    justify-self:center;
-    margin-left: auto;
-    border: none;
-  }
-
-  .filter-form {
+.filter-form {
    background:url("../img/catalog/background.jpg") no-repeat;
    background-size: cover;
   }
-
   .filter-option {
    color:var(--basic-white);
    font-weight: 400;
    border: none;
   }
 
+  .filter-1 {
+    grid-column: 1/2;
+    border: none;
+    margin: 0;
+    padding-left: 72px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .filter-2 {
+    grid-column: 2/3;
+    border: none;
+    margin-left: 15px;
+  }
+ .filter-3 {
+margin: 0 auto;
+padding-left: 152px;
+}
+
+  .filter-option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 40px;
+    padding-bottom: 22px;
+  }
+
+
+  .filter-input-checkbox + label::before {
+  content: "";
+  position:absolute;
+  left:0px;
+  top:0;
+  width:23px;
+  height:23px;
+  background-image:url("../img/catalog/checkbox-off.svg");
+
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left:0px;
+  top:0;
+  width:23px;
+  height:23px;
+  background-image: url("../img/catalog/checkbox-on.svg");
+
+}
+
+.filter-input-checkbox:focus + label::before {
+  content: "";
+  position:absolute;
+  left:0px;
+  top:0;
+  width:23px;
+  height:23px;
+  background-image:url("../img/catalog/checkbox-off.svg");
+}
+
+.filter-input-checkbox:checked:focus + label::after{
+  content: "";
+  position: absolute;
+  left:0px;
+  top:0;
+  width:23px;
+  height:23px;
+  background-image: url("../img/catalog/checkbox-on.svg");
+
+}
+
+.filter-input-checkbox:disabled + label::before {
+  content: "";
+  position:absolute;
+  left:0px;
+  top:0;
+  width:23px;
+  height:23px;
+  background-image:url("../img/catalog/checkbox-off-disabled.svg");
+
+}
+
+.filter-input-checkbox:checked:disabled + label::after{
+  content: "";
+  position: absolute;
+  left:0px;
+  top:0;
+  width:23px;
+  height:23px;
+  background-image: url("../img/catalog/checkbox-on-disabled.svg");
+
+}
  .filter-form legend {
    font-size: 16px;
    line-height: 21px;
    font-weight: 700;
    color:var(--basic-white);
+   padding-top:26px;
+
   }
 
  .filter-form ul {
    list-style: none;
+   padding: 23px 0 0 0;
+margin-bottom: 0px;
+margin-top: 0px;
   }
 
+
   .filter-3 legend {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .price-controls {
     margin-bottom: 20px;
+    background: none;
+    border: 2px solid #FFFFFF;
+    width: 311px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-image: url(../img/catalog/price-control-rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   }
+
 
   .price-controls input {
-  width: 159px;
-  padding: 10px;
-  text-align: center;
-  background: none;
-  border: 2px solid #FFFFFF;
+  text-align: left;
   color:var(--basic-white);
-  }
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  width: 80px;
 
+}
+.price-controls label {
+  padding-left: 53px;
+  padding-bottom: 1px;
+}
   .range-controls {
     position: relative;
   }
@@ -711,10 +814,24 @@
     height: 2px;
     background:var(--basic-white);
   }
-
-  .button-range-min
-  .button-range-max {
+  .range-controls .toggle {
     position: absolute;
+  top: -9px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+  }
+
+  .range-controls .toggle-max {
+    left: 252px;
+  }
+  .range-controls .toggle:hover {
+  transform: scale(1.5);
   }
 
   .filter-button-show {
@@ -722,6 +839,12 @@
     border: 2px solid var(--basic-white);
     color:var(--basic-white);
     text-transform: uppercase;
+    line-height: 21px;
+    padding: 3px 36px 8px 35px;
+    margin-left: 82px;
+     cursor: pointer;
+    user-select: none;
+
   }
 
   .filter-button-show:hover {
@@ -734,18 +857,24 @@
 
  .catalog-sort{
     display: flex;
-    width: 100%;
-    margin: auto;
+    padding-right: 73px;
+    padding-left: 73px;
+    padding-top: 29px;
+    padding-bottom: 31px;
     align-items: center;
-
+    background-image:
+    url("../img/catalog/rectangle.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
   }
+
 
   .catalog-sort h2 {
     font-size: 21px;
    line-height: 26px;
    font-weight: 700;
    color:var(--basic-black);
-   margin-left: 73px;
+   margin: 0;
    margin-right: 46px;
   }
 
@@ -754,13 +883,17 @@
    line-height: 18px;
    font-weight: 400;
    color:var(--basic-black);
+   margin: 0;
 
   }
 
   .sort-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     }
 
 
@@ -800,13 +933,33 @@
     color:var(--blue-gray-light);
     text-decoration: none;
   }
+  .button-sort-up,
+  .button-sort-down {
+    border: none;
+    background-color:transparent;
+    fill:var(--smoky);
+  }
+
+  .button-sort-up:hover path,
+  .button-sort-down:hover path  {
+   fill:var(--basic-black)
+  }
+
+  .button-sort-up:focus path,
+  .button-sort-down:focus path  {
+   fill:var(--blue-gray-light)
+  }
+
+  .button-sort-up:active path,
+  .button-sort-down:active path  {
+   fill:var(--blue-gray-light)
+  }
 
     /* catalog-list */
 
   .catalog-list {
     margin: 0;
-    padding-left: 73px;
-    padding-right: 73px;
+    padding: 0;
     display: grid;
     grid-template-rows: min-content min-content min-content;
     list-style: none;
@@ -814,12 +967,19 @@
 
   .catalog-item {
     margin: 0;
-    padding: 0;
+    padding-left: 73px;
+    padding-right: 73px;
+    padding-top: 24px;
+    padding-bottom: 30px;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     text-transform: uppercase;
     color:var(--basic-black);
+    background-image:
+    url("../img/catalog/rectangle.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
     }
 
 
@@ -843,23 +1003,39 @@
 
   .catalog-item-name {
     margin: 0;
+    margin-bottom: 7px;
     padding: 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+
   }
 
-   .item-info-text{
-     display: flex;
-     text-align: left;
+  .item-info-text{
+   display: flex;
+   text-align: left;
+   margin-bottom: 16px;
+   width: 178px;
+  justify-content: space-between;
 
-   }
-   .item-1-img
-   .item-2-img
+  }
+
+    .item-info-text p {
+      margin: 0;
+    }
+   .item-1-img,
+   .item-2-img,
    .item-3-img {
-     margin: 0;
+     width: 135px;
+     height: 90px;
+     margin-top: 5px;
+     margin-bottom: 0;
      padding: 0;
    }
+
+   .rub::before {
+    content: "\20BD";
+  }
 
    .item-1-info,
    .item-2-info,
@@ -871,12 +1047,14 @@
    .item-1-raiting,
    .item-2-raiting,
    .item-3-raiting {
-    width: 127px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 110px;
     }
     .item-info-button {
       display: flex;
-
-
     }
   .catalog-item-detail {
     font-size: 14px;
@@ -888,8 +1066,8 @@
     background-color:var(--blue-gray-light);
     text-decoration: none;
 
-    width: 110px;
-    height: 27px;
+   display: block;
+   padding:3px 17px 3px 16px;
     margin-right: 6px;
     }
 
@@ -910,8 +1088,7 @@
     color:var(--basic-white);
     background-color: var(--light-brown);
     border: 0px;
-    width: 142px;
-    height: 27px;
+    padding:3px 17px 3px 16px;
   }
 
   .button-reserv:hover {
@@ -927,9 +1104,13 @@
     margin: 0;
     background-color: var(--basic-dark-white);
     text-align: center;
-  }
+    padding: 3px;
+    }
 
   .hostel-star-raiting {
     display: flex;
     justify-content: flex-end;
+  }
+  .hostel-star-raiting p{
+    margin: 0;
   }
