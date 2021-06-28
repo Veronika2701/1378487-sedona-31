@@ -430,7 +430,7 @@
 
 }
 
-  form input {
+.search-form input {
   background-color:var(--basic-dark-white);
   border: 2px solid transparent;
   width: 317px;
@@ -442,12 +442,12 @@
   padding-left: 13px;
   }
 
-  form input:hover {
+  .search-form input:hover {
   background-color:var(--smoky-white-dark);
   border: 2px solid transparent;
   }
 
-  form input:focus {
+  .search-form input:focus {
   background-color:var(--basic-white);
   border: 2px solid #E5E5E5;
   }
