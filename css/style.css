@@ -320,7 +320,7 @@
     .icon-souvenirs {
     background-image: url(../img/content/icon-2.svg);
     background-repeat: no-repeat;
-    background-position: center 64px;
+    background-position: center 57px;
   }
 
   .feature-item-info-detalies h4 {
@@ -1153,6 +1153,6 @@ margin-top: 0px;
     justify-content: flex-end;
 
   }
-  .hostel-star-raiting p{
+  .hostel-star{
     margin: 0;
   }
