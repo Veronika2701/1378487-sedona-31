@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -36,51 +36,53 @@
         <h2 class="visually-hidden"> Критерии выбора</h2>
         <div class="filter-form-container">
           <fieldset class="filter-1">
-            <legend>Инфаструктура:</legend>
+            <legend class="filter-legend">Инфаструктура:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" id="pool-checkbox" name="pool"
                   type="checkbox" checked>
-                <label for="pool-checkbox">Бассейн </label>
+                <label class="filter-option-label" for="pool-checkbox">Бассейн </label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" id="parking-checkbox" name="parking"
                   type="checkbox">
-                <label for="parking-checkbox">Парковка</label>
+                <label class="filter-option-label" for="parking-checkbox">Парковка</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" id="wifi-checkbox" name="wifi"
                   type="checkbox">
-                <label for="wifi-checkbox">Wi-Fi </label>
+                <label class="filter-option-label" for="wifi-checkbox">Wi-Fi </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-2">
-            <legend>Тип жилья:</legend>
+            <legend class="filter-legend">Тип жилья:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" id="hostel-checkbox" name="hostel"
                   type="checkbox" checked>
-                <label class="filter-checkbox" for="hostel-checkbox">Гостиница</label>
+                <label class="filter-option-label" for="hostel-checkbox">Гостиница</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" id="motel-checkbox" name="motel"
                   type="checkbox" checked>
-                <label for="motel-checkbox">Мотель </label>
+                <label class="filter-option-label" for="motel-checkbox">Мотель </label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" id="house-checkbox" name="house"
                   type="checkbox" checked>
-                <label for="house-checkbox"> Апартаменты </label>
+                <label class="filter-option-label" for="house-checkbox"> Апартаменты </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-option filter-3">
-            <legend>Стоимость в сутки, <span class="rub"></span>:</legend>
+            <legend class="filter-legend legend-price">Стоимость в сутки, <span class="rub"></span>:</legend>
             <div class="filter-range">
               <div class="price-controls">
-                <label for="min-price">от <input id="min-price" type="text" name="min-price" value="0"></label>
-                <label for="max-price">до <input id="max-price" type="text" name="max-price" value="3000"></label>
+                <label class="price-control-label-min" for="min-price">от <input id="min-price" type="text"
+                    name="min-price" value="0"></label>
+                <label class="price-control-label-max" for="max-price">до <input id="max-price" type="text"
+                    name="max-price" value="3000"></label>
               </div>
               <div class="range-controls">
                 <div class="scale">
@@ -108,14 +110,16 @@
             <a href="#">По рейтингу</a>
           </li>
         </ul>
-        <button class="button-sort-up" type="button"> <span class="visually-hidden">По возрастанию</span> <svg
-            width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
-          </svg></button>
-        <button class="active button-sort-down" type="button"><span class="visually-hidden">По убыванию</span><svg
-            width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.5 10L0 0H11" fill="#81B3D2" />
-          </svg></button>
+        <div class="button-sort">
+          <button class="button-sort-up" type="button"> <span class="visually-hidden">По возрастанию</span> <svg
+              width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
+            </svg></button>
+          <button class="active button-sort-down" type="button"><span class="visually-hidden">По убыванию</span><svg
+              width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#81B3D2" />
+            </svg></button>
+        </div>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Найденные гостиницы:</h2>
