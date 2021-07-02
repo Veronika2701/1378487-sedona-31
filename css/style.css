@@ -843,12 +843,12 @@ padding-left: 148px;
 }
 
 .price-control-label-min {
-  padding-left: 34px;
+  padding-left: 46px;
   padding-bottom: 1px;
 }
 
-.price-controls-label-max {
-  padding-left: 20px;
+.price-control-label-max {
+  padding-left: 29px;
   padding-bottom: 1px;
 }
   .range-controls {
@@ -912,7 +912,7 @@ padding-left: 148px;
  .catalog-sort{
     display: flex;
     padding-right: 68px;
-    padding-left: 72px;
+    padding-left: 73px;
     padding-top: 29px;
     padding-bottom: 31px;
     align-items: center;
@@ -929,7 +929,7 @@ padding-left: 148px;
    font-weight: 700;
    color:var(--basic-black);
    margin: 0;
-   margin-right: 46px;
+
   }
 
   .catalog-sort p {
@@ -938,7 +938,8 @@ padding-left: 148px;
    font-weight: 400;
    color:var(--basic-black);
    margin: 0;
-
+   margin-left: 46px;
+   padding-bottom: 5px;
   }
 
   .sort-list {
@@ -948,6 +949,8 @@ padding-left: 148px;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 42px;
+    padding-bottom: 3px;
     }
 
 
