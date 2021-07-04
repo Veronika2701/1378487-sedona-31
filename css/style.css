@@ -764,6 +764,17 @@ padding-left: 148px;
   background-image:url("../img/catalog/checkbox-off.svg");
 }
 
+.filter-input-checkbox:focus-visible + label::before {
+  content: "";
+  position:absolute;
+  left:0px;
+  top:0;
+  width:23px;
+  height:23px;
+  background-image:url("../img/catalog/checkbox-off.svg");
+  outline: 2px solid black;
+}
+
 .filter-input-checkbox:checked:focus + label::after{
   content: "";
   position: absolute;
@@ -775,6 +786,17 @@ padding-left: 148px;
 
 }
 
+.filter-input-checkbox:checked:focus-visible + label::after{
+  content: "";
+  position: absolute;
+  left:0px;
+  top:0;
+  width:23px;
+  height:23px;
+  background-image: url("../img/catalog/checkbox-on.svg");
+  outline: 2px solid black;
+
+}
 .filter-input-checkbox:disabled + label::before {
   content: "";
   position:absolute;
