@@ -578,7 +578,7 @@ justify-content: center;
 .search-form-show {
   display: block;
   animation-name: show;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
   @keyframes shake {
@@ -589,7 +589,7 @@ justify-content: center;
 
   .modal-error {
     animation-name: shake;
-    animation-duration: 2.6s;
+    animation-duration: 1s;
   }
 
 
