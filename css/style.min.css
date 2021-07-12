@@ -217,14 +217,14 @@ img {
     font-size: 21px;
     font-weight: 700;
     width: 470px;
-    margin: 0 0 16px 365px
+    margin: 0 auto 43px
 }
 
 .container-promo-text {
     font-weight: 400;
     color: var(--basic-light-black);
     width: 519px;
-    margin: 0 0 51px 340px
+    margin: 0 auto 51px
 }
 
 .features {
@@ -686,7 +686,8 @@ img {
 
 .filter-form {
     background-color: var(--blue-gray-light);
-    background: url(../img/catalog/background.jpg) no-repeat;
+    background-image: url(../img/catalog/background.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     padding: 27px 0 8px
 }
