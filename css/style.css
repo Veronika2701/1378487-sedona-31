@@ -150,7 +150,7 @@ img {
 }
 
 .container-promo {
-    background-color: var(--basic-dark-grey);
+    background-color: var(--blue-gray-light);
     height: 509px;
     margin-bottom: 42px;
     background-image: url(../img/welcome/white-shape.png), url(../img/welcome/gorgeous.svg), url(../img/welcome/welcome-shape.svg), url(../img/welcome/sedona-shape.svg), url(../img/welcome/background-photo.jpg);
@@ -1107,7 +1107,7 @@ img {
     padding: 0;
 }
 
-.rub::before {
+.rub::after {
     content: "\20BD";
 }
 
